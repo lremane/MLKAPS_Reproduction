@@ -1,0 +1,23 @@
+(2026-08-18 23:12:40,280) [INFO] Auto-tuning pipeline started
+(2026-08-18 23:12:40,281) [WARNING] Enabling early stopping for the GA by default
+(2026-08-18 23:12:40,281) [WARNING] Disabling optuna by default
+(2026-08-18 23:12:40,282) [INFO] GA-Adaptive started
+(2026-08-18 23:12:40,282) [INFO] Bootstrapping with LHS
+(2026-08-19 01:19:52,706) [INFO] Bootstrapping finished, starting GA-Adaptive loop
+(2026-08-19 01:20:09,146) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 2.196s)
+(2026-08-19 02:51:10,588) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 2.744s)
+(2026-08-19 04:33:58,769) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 3.326s)
+(2026-08-19 06:31:42,587) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 3.451s)
+(2026-08-19 08:25:13,860) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 3.814s)
+(2026-08-19 10:12:24,490) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 4.441s)
+(2026-08-19 12:11:31,882) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 4.444s)
+(2026-08-19 13:44:53,342) [INFO] Early stopping enabled, threshold inferred to be 1e-09 (Overhead: 4.2s)
+(2026-08-19 15:49:19,231) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 4.694s)
+(2026-08-19 16:58:41,647) [INFO] GA-Adaptive started
+(2026-08-19 16:58:41,647) [INFO] Found samples at '/p/scratch/weatherai/remane1/MLKAPS_dev/examples/Scalapack-PDGEQRF/run_800/kernel_sampling/samples.csv', quick-restarting
+(2026-08-19 16:58:41,647) [WARNING] GA-Adaptive will quick-restart by default, this is currently not configurable
+Please delete '/p/scratch/weatherai/remane1/MLKAPS_dev/examples/Scalapack-PDGEQRF/run_800/kernel_sampling/samples.csv to skip quick-restart.
+(2026-08-19 16:58:41,650) [INFO] Bootstrapping with LHS
+(2026-08-19 16:58:41,657) [INFO] Bootstrapping finished, starting GA-Adaptive loop
+(2026-08-19 16:59:23,137) [INFO] Early stopping enabled, threshold inferred to be 1e-06 (Overhead: 0.094s)
+(2026-08-19 17:08:47,897) [INFO] Pipeline ended, took 64567.61638569832 seconds

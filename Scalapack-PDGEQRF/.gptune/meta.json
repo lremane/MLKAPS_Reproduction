@@ -1,0 +1,40 @@
+{
+    "tuning_problem_name": "PDGEQRF",
+    "machine_configuration": {
+        "machine_name": "JURECA",
+        "rome": {
+            "nodes": 1,
+            "cores": 128
+        }
+    },
+    "software_configuration": {
+        "openmpi": {
+            "version_split": [5,0,5]
+        },
+        "scalapack": {
+            "version_split": [2,1,0]
+        },
+        "gcc": {
+            "version_split": [13,3,0]
+        }
+    },
+    "loadable_machine_configurations": {
+        "JURECA": {
+            "rome": {
+                "nodes": 1,
+                "cores": 128
+            }
+        }
+    },
+    "loadable_software_configurations": {
+        "openmpi": {
+            "version_split": [5,0,5]
+        },
+        "scalapack": {
+            "version_split": [2,2,0]
+        },
+        "gcc": {
+            "version_split": [13,3,0]
+        }
+    }
+}

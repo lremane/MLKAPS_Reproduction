@@ -1,0 +1,18 @@
+(2026-07-23 15:15:21,242) [INFO] Auto-tuning pipeline started
+(2026-07-23 15:15:21,242) [WARNING] Enabling early stopping for the GA by default
+(2026-07-23 15:15:21,242) [WARNING] Disabling optuna by default
+(2026-07-23 15:15:21,243) [INFO] GA-Adaptive started
+(2026-07-23 15:15:21,243) [INFO] Bootstrapping with LHS
+(2026-07-23 15:47:13,756) [INFO] Bootstrapping finished, starting GA-Adaptive loop
+(2026-07-23 15:47:16,182) [INFO] Early stopping enabled, threshold inferred to be 0.01 (Overhead: 0.284s)
+(2026-07-23 16:42:50,328) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 1.837s)
+(2026-07-23 17:36:37,516) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 2.326s)
+(2026-07-23 18:34:41,650) [INFO] Early stopping enabled, threshold inferred to be 1e-08 (Overhead: 2.846s)
+(2026-07-23 19:37:37,601) [INFO] GA-Adaptive started
+(2026-07-23 19:37:37,601) [INFO] Found samples at '/p/scratch/weatherai/remane1/MLKAPS/examples/Scalapack-PDGEQRF/mlkaps_output/kernel_sampling/samples.csv', quick-restarting
+(2026-07-23 19:37:37,601) [WARNING] GA-Adaptive will quick-restart by default, this is currently not configurable
+Please delete '/p/scratch/weatherai/remane1/MLKAPS/examples/Scalapack-PDGEQRF/mlkaps_output/kernel_sampling/samples.csv to skip quick-restart.
+(2026-07-23 19:37:37,626) [INFO] Bootstrapping with LHS
+(2026-07-23 19:37:37,629) [INFO] Bootstrapping finished, starting GA-Adaptive loop
+(2026-07-23 19:37:58,620) [INFO] Early stopping enabled, threshold inferred to be 1e-06 (Overhead: 0.013s)
+(2026-07-23 19:43:05,574) [INFO] Pipeline ended, took 16064.33183002472 seconds
