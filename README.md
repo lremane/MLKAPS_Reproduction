@@ -7,15 +7,20 @@ The code for running MLKAPS on the `PDGEQRF` kernel was missing from the origina
 ## Running the experiments
 
 1. Clone the original MLKAPS repository, using the `dev` branch:
-   ```bash
+```bash
    git clone --branch dev https://github.com/MLCGO/MLKAPS.git
-   ```
+```
 2. Move the `Scalapack-PDGEQRF` directory from this repository into the `examples` directory of the cloned MLKAPS repository.
 3. Follow the normal installation instructions from the MLKAPS repository.
-4. Run the experiment. If running on JURECA (where this was tested), the test results can be reproduced by first allocating exactly one node with 128 cores, then running from the `examples` directory:
-   ```bash
+4. Compile the `pdqrdriver` binary. On JURECA this step can be skipped, since a precompiled binary is already included in `scalapack-driver/bin/jsc/`. On other machines, load the required modules, then build from the `scalapack-driver` directory:
+```bash
+   cd Scalapack-PDGEQRF/scalapack-driver
+   make
+```
+5. Run the experiment. If running on JURECA (where this was tested), the test results can be reproduced by first allocating exactly one node with 128 cores, then running from the `examples` directory:
+```bash
    mlkaps Scalapack-PDGEQRF/pdgeqrf_mlkaps.json
-   ```
+```
    An example of how to allocate resources and execute MLKAPS on JURECA can be found in [`run_mlkaps.sh`](run_mlkaps.sh).
 
 ## Validation

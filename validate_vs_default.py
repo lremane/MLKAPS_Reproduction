@@ -15,7 +15,6 @@ DEFAULT_NB = 64
 DEFAULT_P = 11
 DEFAULT_Q = 11
 DEFAULT_NPROC = DEFAULT_P * DEFAULT_Q
-DEFAULT_NTHREADS = 1
 
 rows = []
 
@@ -32,20 +31,11 @@ with open(TREE_RESULTS_CSV, newline="") as f, open(OUT_CSV, "a", newline="") as 
         beta = float(row["beta"])
         p_frac = float(row["p_frac"])
 
-        mb, nb, p, q, npernode, nproc, nthreads = reformulate(
-            m, n, alpha, beta, gamma, p_frac
-        )
+        mb, nb, p, q, nproc = reformulate(m, n, alpha, beta, gamma, p_frac)
 
-        tree_time = run_driver(
-            m, n, mb, nb, p, q, nproc, nthreads
-        )
+        tree_time = run_driver(m, n, mb, nb, p, q, nproc)
 
-        default_time = run_driver(
-            m, n,
-            DEFAULT_MB, DEFAULT_NB,
-            DEFAULT_P, DEFAULT_Q,
-            DEFAULT_NPROC, DEFAULT_NTHREADS
-        )
+        default_time = run_driver(m, n, DEFAULT_MB, DEFAULT_NB, DEFAULT_P, DEFAULT_Q, DEFAULT_NPROC)
 
         if tree_time is not None and default_time is not None and tree_time > 0:
             speedup = default_time / tree_time
